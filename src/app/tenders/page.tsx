@@ -6,6 +6,12 @@ import FooterSection from '@/components/footer';
 export const metadata: Metadata = {
   title: 'Tenders & Compliance - Ndila Connect Services',
   description: 'Company profile, certifications, compliance documents, and tender responses.',
+  openGraph: {
+    title: 'Tenders & Compliance - Ndila Connect Services',
+    description: 'Company profile, certifications, compliance documents, and tender responses.',
+    type: 'website',
+    url: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://ndila.com'}/tenders`,
+  },
 };
 
 export default function TendersPage() {

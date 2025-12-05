@@ -6,6 +6,12 @@ import FooterSection from '@/components/footer';
 export const metadata: Metadata = {
   title: 'About Ndila Connect Services',
   description: 'Learn about our expertise in DevOps, cloud infrastructure, and enterprise solutions.',
+  openGraph: {
+    title: 'About Ndila Connect Services',
+    description: 'Enterprise DevOps and cloud infrastructure consulting',
+    type: 'website',
+    url: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://ndila.com'}/about`,
+  },
 };
 
 export default function AboutPage() {

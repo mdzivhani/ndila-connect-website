@@ -8,6 +8,12 @@ import { ScrollView } from '@/components/scroll-view';
 export const metadata: Metadata = {
   title: 'Services - Ndila Connect Services',
   description: 'DevOps, Cloud Infrastructure, Application Development, Security & Compliance, and Observability solutions.',
+  openGraph: {
+    title: 'Services - Ndila Connect Services',
+    description: 'DevOps, Cloud Infrastructure, Application Development, Security & Compliance, and Observability solutions.',
+    type: 'website',
+    url: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://ndila.com'}/services`,
+  },
 };
 
 export default function ServicesPage() {

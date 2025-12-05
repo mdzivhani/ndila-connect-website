@@ -8,6 +8,12 @@ import Image from 'next/image';
 export const metadata: Metadata = {
   title: 'Portfolio - Case Studies | Ndila Connect Services',
   description: 'View our latest projects and case studies showcasing successful DevOps, cloud, and software solutions.',
+  openGraph: {
+    title: 'Portfolio - Case Studies | Ndila Connect Services',
+    description: 'View our latest projects and case studies showcasing successful DevOps, cloud, and software solutions.',
+    type: 'website',
+    url: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://ndila.com'}/portfolio`,
+  },
 };
 
 export default function PortfolioPage() {

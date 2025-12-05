@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# Sitemaps
+Sitemap: https://ndila.com/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1

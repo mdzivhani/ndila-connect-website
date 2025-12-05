@@ -6,6 +6,12 @@ import FooterSection from '@/components/footer';
 export const metadata: Metadata = {
   title: 'Blog & Insights - Ndila Connect Services',
   description: 'Technical insights, DevOps best practices, and industry trends.',
+  openGraph: {
+    title: 'Blog & Insights - Ndila Connect Services',
+    description: 'Technical insights, DevOps best practices, and industry trends.',
+    type: 'website',
+    url: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://ndila.com'}/blog`,
+  },
 };
 
 const BLOG_POSTS = [
