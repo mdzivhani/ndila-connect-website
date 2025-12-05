@@ -57,7 +57,7 @@ export default function PortfolioPage() {
           <div className="border-t pt-12 mt-12 text-center">
             <h3 className="text-2xl font-bold mb-4">Ready to Work Together?</h3>
             <p className="text-gray-600 mb-6">
-              Let's discuss how we can help you achieve your infrastructure and business goals.
+              Let&apos;s discuss how we can help you achieve your infrastructure and business goals.
             </p>
             <Link href="/contact">
               <Button size="lg">Start Your Project</Button>

@@ -70,14 +70,14 @@ export default function ContactPage() {
             <h1 className="text-4xl md:text-5xl font-bold">Get In Touch</h1>
             <p className="text-lg text-gray-600">
               Have a project in mind or want to discuss your infrastructure challenges? 
-              We'd love to hear from you.
+              We&apos;d love to hear from you.
             </p>
           </div>
 
           {submitted && (
             <div className="mb-8 p-4 bg-green-50 border border-green-200 rounded-lg">
               <p className="text-green-800">
-                ✓ Thank you for your message! We'll get back to you soon.
+                ✓ Thank you for your message! We&apos;ll get back to you soon.
               </p>
             </div>
           )}

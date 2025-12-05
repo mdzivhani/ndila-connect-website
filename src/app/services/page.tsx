@@ -62,7 +62,7 @@ export default function ServicesPage() {
           <div className="mt-16 pt-12 border-t text-center">
             <h3 className="text-2xl font-bold mb-4">Ready to Get Started?</h3>
             <p className="text-gray-600 mb-6">
-              Let's discuss how we can help optimize your infrastructure and operations.
+              Let&apos;s discuss how we can help optimize your infrastructure and operations.
             </p>
             <Link href="/contact">
               <Button size="lg">Request a Consultation</Button>
