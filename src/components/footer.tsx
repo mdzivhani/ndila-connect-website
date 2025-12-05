@@ -1,6 +1,7 @@
 "use client";
 import { Logo } from "@/components/logo";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "motion/react";
 import { ScrollView } from "./scroll-view";
 import { FOOTER_LINKS } from "@/content/footer";
@@ -10,13 +11,28 @@ export default function FooterSection() {
     <footer className="py-16 md:py-32">
       <div className="mx-auto max-w-5xl px-6">
         <ScrollView>
-          <Link
-            href="/"
-            aria-label="go home"
-            className="mx-auto block size-fit"
-          >
-            <Logo />
-          </Link>
+          <div className="flex flex-col items-center gap-4">
+            <Link
+              href="/"
+              aria-label="go home"
+              className="mx-auto block size-fit"
+            >
+              <Logo />
+            </Link>
+            <Link
+              href="/"
+              aria-label="Ndila Connect Logo"
+              className="mx-auto block"
+            >
+              <Image
+                src="/img/logo/ndila-logo.png"
+                alt="Ndila Connect - DevOps & Cloud Solutions"
+                width={120}
+                height={120}
+                className="h-auto w-24 md:w-32"
+              />
+            </Link>
+          </div>
         </ScrollView>
         <ScrollView stagger delay={0.1}>
           <div className="my-8 flex flex-wrap justify-center gap-6 text-sm">
