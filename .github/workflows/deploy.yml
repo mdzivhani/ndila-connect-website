@@ -25,12 +25,11 @@ jobs:
     - name: Build
       run: pnpm run build
     
-    # Option 1: Deploy to Vercel
+    # Option 1: Deploy to Vercel (requires VERCEL_TOKEN secret)
     - name: Deploy to Vercel
       run: |
         npm install -g vercel
         vercel deploy --prod --token ${{ secrets.VERCEL_TOKEN }}
-      if: ${{ secrets.VERCEL_TOKEN != '' }}
       continue-on-error: true
     
     # Option 2: Deploy to Azure (uncomment and configure if using Azure)
