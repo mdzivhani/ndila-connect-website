@@ -36,7 +36,7 @@ export default function RootLayout({
               "@type": "Organization",
               name: "Ndila Connect Services",
               url: "https://ndila.com",
-              logo: "https://ndila.com/images/ndila-logo.png",
+              logo: "https://ndila.com/img/logo/ndila-logo.png",
               description: "Professional DevOps, cloud infrastructure, application development, security compliance, and observability services for enterprises.",
               sameAs: [
                 "https://github.com/mdzivhani",
