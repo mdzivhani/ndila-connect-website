@@ -1,5 +1,5 @@
+import Image from "next/image";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { ScrollView } from "./scroll-view";
 
 export default function Testimonials() {
@@ -9,121 +9,77 @@ export default function Testimonials() {
         <div className="relative z-10 mx-auto max-w-xl space-y-6 text-center md:space-y-12">
           <ScrollView>
             <h2 className="text-4xl font-medium lg:text-5xl">
-              Build by makers, loved by thousand developers
+              About My Work
             </h2>
           </ScrollView>
           <ScrollView delay={0.2}>
             <p>
-              Gemini is evolving to be more than just the models. It supports an
-              entire to the APIs and platforms helping developers and businesses
-              innovate.
+              DevOps architect and cloud solutions specialist with hands-on experience 
+              in enterprise infrastructure and automation. Passionate about delivering 
+              reliable, scalable solutions that drive business success.
             </p>
           </ScrollView>
         </div>
 
         <ScrollView delay={0.3}>
-          <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-rows-2">
-            <Card className="grid grid-rows-[auto_1fr] gap-8 sm:col-span-2 sm:p-6 lg:row-span-2">
-              <CardHeader>
-                {/* TODO: Add company logo here */}
-                <div className="h-6 w-20 bg-gray-300 rounded"></div>
+          <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-2">
+            {/* Main Card - Professional Experience */}
+            <Card className="grid grid-rows-[auto_1fr] gap-6 sm:col-span-2 sm:p-6 md:col-span-1">
+              <CardHeader className="p-0">
+                <div className="relative w-full h-48 bg-gray-200 rounded-lg overflow-hidden">
+                  <Image
+                    src="/img/logo/mulaloScreenshot.png"
+                    alt="Mulalo Dzivhani - DevOps Architect"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                </div>
               </CardHeader>
-              <CardContent>
-                <blockquote className="grid h-full grid-rows-[1fr_auto] gap-6">
-                  <p className="text-xl font-medium">
-                    Tailus has transformed the way I develop web applications.
-                    Their extensive collection of UI components, blocks, and
-                    templates has significantly accelerated my workflow. The
-                    flexibility to customize every aspect allows me to create
-                    unique user experiences. Tailus is a game-changer for modern
-                    web development
-                  </p>
-
-                  <div className="grid grid-cols-[auto_1fr] items-center gap-3">
-                    <Avatar className="size-12 bg-blue-500 text-white">
-                      <AvatarFallback>ST</AvatarFallback>
-                    </Avatar>
-
-                    <div>
-                      <cite className="text-sm font-medium">
-                        Shekinah Tshiokufila
-                      </cite>
-                      <span className="text-muted-foreground block text-sm">
-                        Software Engineer
-                      </span>
-                    </div>
+              <CardContent className="p-0">
+                <div className="space-y-4">
+                  <div>
+                    <h3 className="text-lg font-medium">Mulalo Dzivhani</h3>
+                    <p className="text-sm text-muted-foreground">
+                      DevOps Architect & Cloud Solutions Specialist
+                    </p>
                   </div>
-                </blockquote>
+                  <p className="text-sm">
+                    Building and maintaining enterprise infrastructure with a focus on 
+                    reliability, security, and scalability. Specialized in Kubernetes, 
+                    CI/CD pipelines, and cloud architecture.
+                  </p>
+                </div>
               </CardContent>
             </Card>
-            <Card className="md:col-span-2">
-              <CardContent className="h-full pt-6">
-                <blockquote className="grid h-full grid-rows-[1fr_auto] gap-6">
-                  <p className="text-xl font-medium">
-                    Tailus is really extraordinary and very practical, no need
-                    to break your head. A real gold mine.
-                  </p>
 
-                  <div className="grid grid-cols-[auto_1fr] items-center gap-3">
-                    <Avatar className="size-12 bg-purple-500 text-white">
-                      <AvatarFallback>JY</AvatarFallback>
-                    </Avatar>
-                    <div>
-                      <cite className="text-sm font-medium">
-                        Jonathan Yombo
-                      </cite>
-                      <span className="text-muted-foreground block text-sm">
-                        Software Engineer
-                      </span>
-                    </div>
+            {/* Side Card - Passion */}
+            <Card className="grid grid-rows-[auto_1fr] gap-6 sm:p-6 md:col-span-1">
+              <CardHeader className="p-0">
+                <div className="relative w-full h-48 bg-gray-200 rounded-lg overflow-hidden">
+                  <Image
+                    src="/img/logo/BMWGermany.jpg"
+                    alt="Professional Journey"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                </div>
+              </CardHeader>
+              <CardContent className="p-0">
+                <div className="space-y-4">
+                  <div>
+                    <h3 className="text-lg font-medium">Professional Journey</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Experience & Expertise
+                    </p>
                   </div>
-                </blockquote>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent className="h-full pt-6">
-                <blockquote className="grid h-full grid-rows-[1fr_auto] gap-6">
-                  <p>
-                    Great work on tailfolio template. This is one of the best
-                    personal website that I have seen so far!
+                  <p className="text-sm">
+                    Years of hands-on experience deploying and managing cloud infrastructure 
+                    across AWS, Azure, and on-premises environments. Committed to automation, 
+                    continuous improvement, and operational excellence.
                   </p>
-
-                  <div className="grid items-center gap-3 [grid-template-columns:auto_1fr]">
-                    <Avatar className="size-12 bg-green-500 text-white">
-                      <AvatarFallback>YF</AvatarFallback>
-                    </Avatar>
-                    <div>
-                      <cite className="text-sm font-medium">
-                        Yucel Faruksahan
-                      </cite>
-                      <span className="text-muted-foreground block text-sm">
-                        Creator, Tailkits
-                      </span>
-                    </div>
-                  </div>
-                </blockquote>
-              </CardContent>
-            </Card>
-            <Card className="card variant-mixed">
-              <CardContent className="h-full pt-6">
-                <blockquote className="grid h-full grid-rows-[1fr_auto] gap-6">
-                  <p>
-                    Great work on tailfolio template. This is one of the best
-                    personal website that I have seen so far!
-                  </p>
-
-                  <div className="grid grid-cols-[auto_1fr] gap-3">
-                    <Avatar className="size-12 bg-orange-500 text-white">
-                      <AvatarFallback>RA</AvatarFallback>
-                    </Avatar>
-                    <div>
-                      <p className="text-sm font-medium">Rodrigo Aguilar</p>
-                      <span className="text-muted-foreground block text-sm">
-                        Creator, TailwindAwesome
-                      </span>
-                    </div>
-                  </div>
-                </blockquote>
+                </div>
               </CardContent>
             </Card>
           </div>
