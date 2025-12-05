@@ -7,37 +7,43 @@ const members = [
   {
     name: "Liam Brown",
     role: "Founder - CEO",
-    avatar: "https://alt.tailus.io/images/team/member-one.webp",
+    bgColor: "from-blue-400 to-blue-600",
+    initials: "LB",
     link: "#",
   },
   {
     name: "Elijah Jones",
     role: "Co-Founder - CTO",
-    avatar: "https://alt.tailus.io/images/team/member-two.webp",
+    bgColor: "from-purple-400 to-purple-600",
+    initials: "EJ",
     link: "#",
   },
   {
     name: "Isabella Garcia",
     role: "Sales Manager",
-    avatar: "https://alt.tailus.io/images/team/member-three.webp",
+    bgColor: "from-pink-400 to-pink-600",
+    initials: "IG",
     link: "#",
   },
   {
     name: "Henry Lee",
-    role: "UX Engeneer",
-    avatar: "https://alt.tailus.io/images/team/member-four.webp",
+    role: "UX Engineer",
+    bgColor: "from-green-400 to-green-600",
+    initials: "HL",
     link: "#",
   },
   {
     name: "Ava Williams",
     role: "Interaction Designer",
-    avatar: "https://alt.tailus.io/images/team/member-five.webp",
+    bgColor: "from-orange-400 to-orange-600",
+    initials: "AW",
     link: "#",
   },
   {
     name: "Olivia Miller",
     role: "Visual Designer",
-    avatar: "https://alt.tailus.io/images/team/member-six.webp",
+    bgColor: "from-red-400 to-red-600",
+    initials: "OM",
     link: "#",
   },
 ];
@@ -82,13 +88,14 @@ export default function TeamSection() {
                       },
                     }}
                   >
-                    <img
-                      className="h-96 w-full rounded-md object-cover object-top grayscale transition-all duration-500 hover:grayscale-0 group-hover:h-[22.5rem] group-hover:rounded-xl"
-                      src={member.avatar}
-                      alt="team member"
-                      width="826"
-                      height="1239"
-                    />
+                    {/* Placeholder for team member photo - Add real photos here */}
+                    <div
+                      className={`h-96 w-full rounded-md bg-gradient-to-br ${member.bgColor} transition-all duration-500 group-hover:h-[22.5rem] group-hover:rounded-xl flex items-center justify-center text-white`}
+                    >
+                      <span className="text-5xl font-bold opacity-50">
+                        {member.initials}
+                      </span>
+                    </div>
                     <div className="px-2 pt-2 sm:pb-0 sm:pt-4">
                       <div className="flex justify-between">
                         <h3 className="text-title text-base font-medium transition-all duration-500 group-hover:tracking-wider">

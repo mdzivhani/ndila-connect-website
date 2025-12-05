@@ -16,10 +16,6 @@ export const FOOTER_LINKS = [
     href: "/portfolio",
   },
   {
-    title: "Blog",
-    href: "/blog",
-  },
-  {
     title: "Contact",
     href: "/contact",
   },

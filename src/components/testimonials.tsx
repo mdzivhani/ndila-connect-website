@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { ScrollView } from "./scroll-view";
 
 export default function Testimonials() {
@@ -25,13 +25,8 @@ export default function Testimonials() {
           <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-rows-2">
             <Card className="grid grid-rows-[auto_1fr] gap-8 sm:col-span-2 sm:p-6 lg:row-span-2">
               <CardHeader>
-                <img
-                  className="h-6 w-fit dark:invert"
-                  src="https://html.tailus.io/blocks/customers/nike.svg"
-                  alt="Nike Logo"
-                  height="24"
-                  width="auto"
-                />
+                {/* TODO: Add company logo here */}
+                <div className="h-6 w-20 bg-gray-300 rounded"></div>
               </CardHeader>
               <CardContent>
                 <blockquote className="grid h-full grid-rows-[1fr_auto] gap-6">
@@ -45,14 +40,7 @@ export default function Testimonials() {
                   </p>
 
                   <div className="grid grid-cols-[auto_1fr] items-center gap-3">
-                    <Avatar className="size-12">
-                      <AvatarImage
-                        src="https://tailus.io/images/reviews/shekinah.webp"
-                        alt="Shekinah Tshiokufila"
-                        height="400"
-                        width="400"
-                        loading="lazy"
-                      />
+                    <Avatar className="size-12 bg-blue-500 text-white">
                       <AvatarFallback>ST</AvatarFallback>
                     </Avatar>
 
@@ -61,7 +49,7 @@ export default function Testimonials() {
                         Shekinah Tshiokufila
                       </cite>
                       <span className="text-muted-foreground block text-sm">
-                        Software Ingineer
+                        Software Engineer
                       </span>
                     </div>
                   </div>
@@ -77,14 +65,7 @@ export default function Testimonials() {
                   </p>
 
                   <div className="grid grid-cols-[auto_1fr] items-center gap-3">
-                    <Avatar className="size-12">
-                      <AvatarImage
-                        src="https://tailus.io/images/reviews/jonathan.webp"
-                        alt="Jonathan Yombo"
-                        height="400"
-                        width="400"
-                        loading="lazy"
-                      />
+                    <Avatar className="size-12 bg-purple-500 text-white">
                       <AvatarFallback>JY</AvatarFallback>
                     </Avatar>
                     <div>
@@ -92,7 +73,7 @@ export default function Testimonials() {
                         Jonathan Yombo
                       </cite>
                       <span className="text-muted-foreground block text-sm">
-                        Software Ingineer
+                        Software Engineer
                       </span>
                     </div>
                   </div>
@@ -108,14 +89,7 @@ export default function Testimonials() {
                   </p>
 
                   <div className="grid items-center gap-3 [grid-template-columns:auto_1fr]">
-                    <Avatar className="size-12">
-                      <AvatarImage
-                        src="https://tailus.io/images/reviews/yucel.webp"
-                        alt="Yucel Faruksahan"
-                        height="400"
-                        width="400"
-                        loading="lazy"
-                      />
+                    <Avatar className="size-12 bg-green-500 text-white">
                       <AvatarFallback>YF</AvatarFallback>
                     </Avatar>
                     <div>
@@ -139,15 +113,8 @@ export default function Testimonials() {
                   </p>
 
                   <div className="grid grid-cols-[auto_1fr] gap-3">
-                    <Avatar className="size-12">
-                      <AvatarImage
-                        src="https://tailus.io/images/reviews/rodrigo.webp"
-                        alt="Rodrigo Aguilar"
-                        height="400"
-                        width="400"
-                        loading="lazy"
-                      />
-                      <AvatarFallback>YF</AvatarFallback>
+                    <Avatar className="size-12 bg-orange-500 text-white">
+                      <AvatarFallback>RA</AvatarFallback>
                     </Avatar>
                     <div>
                       <p className="text-sm font-medium">Rodrigo Aguilar</p>
