@@ -4,25 +4,25 @@ import Image from "next/image";
 
 const ourPrinciples = [
   {
-    title: "Creativity with Purpose",
+    title: "Technical Excellence",
     description:
-      "Our designs aren’t just pretty; they’re built to solve problems and make an impact.",
+      "Deep expertise in DevOps, cloud architecture, and modern software practices.",
   },
   {
-    title: "Collaboration is Key",
+    title: "Business Focused",
     description:
-      "We work with you, not just for you. Great ideas come from teamwork.",
+      "Solutions designed to reduce costs, improve efficiency, and enable growth.",
   },
 
   {
-    title: "Honest & Transparent",
+    title: "Reliable & Supportive",
     description:
-      "No confusing jargon or hidden fees. Just clear communication and real results.",
+      "24/7 support and proactive monitoring ensure your systems run smoothly.",
   },
   {
-    title: "Details Matter",
+    title: "Security First",
     description:
-      "The little things make a big difference. We sweat the small stuff, so you don’t have to.",
+      "Enterprise-grade security practices and compliance built into every solution.",
   },
 ];
 
@@ -33,28 +33,25 @@ export default function ContentSection() {
         <div className="mx-auto max-w-xl space-y-6 text-center md:space-y-12">
           <ScrollView>
             <h2 className="text-balance text-4xl font-medium lg:text-5xl">
-              About Us
+              About Ndila Connect Services
             </h2>
           </ScrollView>
           <ScrollView>
             <p>
-              Lume Studio was born from a simple idea—great design should do
-              more than just look good; it should make an impact. What started
-              as a passion for creativity turned into a full-fledged design
-              agency dedicated to helping brands tell their stories, connect
-              with audiences, and stand out in a crowded world.
+              Ndila Connect Services is a specialized consulting firm dedicated to helping enterprises
+              design, build, and operate reliable, scalable, and secure digital infrastructure.
+              With deep expertise in DevOps, cloud architecture, and enterprise software development,
+              we partner with organizations to modernize their technology stack and optimize operations.
             </p>
           </ScrollView>
         </div>
         <ScrollView>
-          <Image
-            className="rounded-(--radius) grayscale-75 object-cover aspect-[16/9] w-full"
-            src="/images/office.jpeg"
-            alt="team image"
-            height="480"
-            width="720"
-            loading="lazy"
-          />
+          <div className="rounded-lg bg-gradient-to-br from-gray-100 to-gray-200 aspect-[16/9] w-full flex items-center justify-center">
+            <div className="text-gray-600 text-center">
+              <p className="text-lg font-semibold">Team Photo</p>
+              <p className="text-sm">[Professional team image]</p>
+            </div>
+          </div>
         </ScrollView>
         <ScrollView>
           <div className="relative mx-auto grid grid-cols-2 gap-x-3 gap-y-6 sm:gap-8 lg:grid-cols-4">

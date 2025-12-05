@@ -174,8 +174,10 @@ export default function FooterSection() {
         </ScrollView>
         <ScrollView delay={0.2} viewMargin="0px 0px -20px 0px">
           <span className="text-muted-foreground block text-center text-sm">
-            {" "}
-            © {new Date().getFullYear()} Lume Studio, All rights reserved
+            © {new Date().getFullYear()} Ndila Connect Services. All rights reserved. | 
+            <Link href="https://github.com/haramishra/lume-studio-next" target="_blank" className="hover:text-primary ml-1">
+              Template by Harami Mishra
+            </Link>
           </span>
         </ScrollView>
       </div>

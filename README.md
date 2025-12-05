@@ -1,47 +1,112 @@
-# Lume Studio - Next.js Template
+# Ndila Connect Services Website
 
-This project is a Next.js template built with TypeScript, designed for creating stunning websites with smooth animations and modern UI components.
+A modern, professional website for Ndila Connect Services built with Next.js, TypeScript, and Tailwind CSS.
+
+## Features
+
+- **Responsive Design** - Mobile-first approach, works on all devices
+- **Dark Mode Support** - Built-in light/dark theme switching
+- **Contact Form** - Email form with file upload support
+- **SEO Optimized** - Meta tags, structured data, sitemap
+- **Performance** - Optimized images, code splitting, fast load times
+- **DevOps Best Practices** - Clean code, proper error handling, structured logging
+- **Professional Design** - No AI-generated visuals, clean and minimal aesthetic
+
+## Pages
+
+- **Home** - Hero section, services overview, portfolio highlights, call-to-action
+- **About** - Company mission, values, team expertise
+- **Services** - Detailed service offerings (DevOps, Cloud, Development, Security, Observability)
+- **Portfolio** - Case studies and past projects
+- **Blog** - Technical insights and industry articles
+- **Tenders & Compliance** - Company documentation, certifications, experience
+- **Contact** - Contact form with file uploads for RFPs
+
+## Tech Stack
+
+- **Framework**: Next.js 15
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS 4
+- **Components**: Radix UI
+- **Icons**: Lucide React
+- **Animations**: Motion (Framer Motion)
+- **Email**: Nodemailer
+- **Validation**: Zod
 
 ## Getting Started
 
-1.  **Install dependencies:**
+### Prerequisites
 
-    ```bash
-    pnpm install
-    ```
+- Node.js 18+
+- pnpm (recommended) or npm/yarn
 
-2.  **Run the development server:**
+### Installation
 
-    ```bash
-    pnpm dev
-    ```
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/ndila-connect-website.git
+cd ndila-connect-website
+```
 
-    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+pnpm install
+```
+
+3. Create environment configuration:
+```bash
+cp .env.example .env.local
+```
+
+4. Update `.env.local` with your configuration
+
+### Development
+
+Start the development server:
+```bash
+pnpm dev
+```
+
+### Build
+
+Build for production:
+```bash
+pnpm build
+pnpm start
+```
+
+### Linting
+
+Run ESLint:
+```bash
+pnpm lint
+```
 
 ## Deployment
 
-### Cloudflare Pages
+### Vercel (Recommended)
+```bash
+vercel deploy --prod
+```
 
-If you intend to deploy this project using Cloudflare Pages, please use the `cf-pages` branch. This branch contains configurations optimized for Cloudflare Pages deployment.
+### Azure Static Web Apps
+Connect repository to Azure portal and configure build settings.
 
-## Key Components
+### Custom Server
+```bash
+pnpm build && pnpm start
+```
 
-### ScrollView Component [`src/components/scroll-view.tsx`](src/components/scroll-view.tsx)
+## CI/CD
 
-The `ScrollView` component is a utility component that triggers animations when an element becomes visible in the viewport. It's designed to enhance user experience by adding engaging visual effects as users scroll through the page.
+GitHub Actions workflows are configured in `.github/workflows/`:
+- **test-and-build.yml**: Runs linting, type check, and build on PR
+- **deploy.yml**: Builds and deploys to production on merge to main
 
-## Technologies Used
+## Documentation
 
-- [Next.js](https://nextjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [pnpm](https://pnpm.io/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Motion.dev](https://motion.dev/)
+See `.instructions` for detailed development standards and guidelines.
 
 ## License
 
-MIT
-
-## Full version
-
-For the full version, go to https://lume.kohi.studio/full-version
+MIT License - Built on template by Harami Mishra

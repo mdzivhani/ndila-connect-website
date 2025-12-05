@@ -5,22 +5,26 @@ export const FOOTER_LINKS = [
   },
   {
     title: "About",
-    href: "#about",
-  },
-  {
-    title: "Team",
-    href: "#team",
+    href: "/about",
   },
   {
     title: "Services",
-    href: "#services",
+    href: "/services",
   },
   {
     title: "Portfolio",
-    href: "#portfolio",
+    href: "/portfolio",
   },
   {
-    title: "Testimonials",
-    href: "#testimonials",
+    title: "Blog",
+    href: "/blog",
+  },
+  {
+    title: "Contact",
+    href: "/contact",
+  },
+  {
+    title: "Tenders & Compliance",
+    href: "/tenders",
   },
 ];

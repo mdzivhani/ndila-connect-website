@@ -1,0 +1,133 @@
+# Ndila Connect Services Website - Development Standards
+
+## Project Overview
+Personal and business website for Ndila Connect Services built with Next.js, TypeScript, and Tailwind CSS.
+- Template: Lume Studio Next (haramishra/lume-studio-next)
+- License: MIT
+- Hosting: Vercel / Azure / Custom (TBD)
+
+## Development Standards
+
+### Git Strategy
+- **Main branches**: `main` (production), `dev` (staging)
+- **Feature branches**: `feature/feature-name`, `fix/bug-name`, `chore/task-name`
+- **Commit format**: Conventional commits
+  - `feat: add new feature`
+  - `fix: resolve bug`
+  - `docs: update documentation`
+  - `style: format code`
+  - `chore: maintenance tasks`
+
+### Code Standards
+- **Language**: TypeScript (strict mode)
+- **Framework**: Next.js 15+
+- **Styling**: Tailwind CSS 4
+- **Component Library**: Radix UI, Lucide Icons
+- **Code style**: ESLint configuration included
+- **No AI-generated visuals**: Use professional, clean icons only
+
+### File Organization
+```
+src/
+├── app/           # Next.js app router pages
+├── components/    # Reusable React components
+├── content/       # Static content (markdown, data)
+├── hooks/         # Custom React hooks
+├── lib/           # Utility functions and helpers
+├── styles/        # Global styles (if needed beyond Tailwind)
+└── types/         # TypeScript type definitions
+```
+
+### Component Standards
+- Use TypeScript interfaces for props
+- Functional components only
+- Client-side rendering with `'use client'` when needed
+- Server components as default
+
+### Error Handling
+- Structured logging with context (timestamp, level, message, error details)
+- Try-catch blocks with proper error propagation
+- User-friendly error messages in UI
+- Detailed logs for debugging
+
+### Testing
+- Unit tests for utilities and hooks
+- Integration tests for API routes
+- End-to-end tests for critical flows
+- Test files: `*.test.ts` or `*.spec.ts`
+
+### Security
+- Input validation on frontend AND backend
+- SMTP credentials via environment variables
+- Secure file upload handling (size limits, type validation)
+- CSRF protection
+- Rate limiting on API endpoints
+
+### SEO & Metadata
+- Meta tags on all pages
+- Open Graph tags for social sharing
+- Structured data (JSON-LD)
+- Sitemap.xml and robots.txt
+- Mobile responsive design first
+
+### Environment Variables
+```
+.env.local (local development)
+.env.example (template for CI/CD)
+
+Required variables:
+- NEXT_PUBLIC_SITE_URL
+- SMTP_HOST
+- SMTP_PORT
+- SMTP_USER
+- SMTP_PASS
+- CONTACT_EMAIL
+- NEXT_PUBLIC_ANALYTICS_ID (optional)
+```
+
+### CI/CD Pipeline (GitHub Actions)
+- On PR: Run linting, type check, build test
+- On merge to main: Build, test, deploy to production
+- On merge to dev: Deploy to staging
+
+### Performance
+- Image optimization (Next.js Image component)
+- Code splitting enabled by default
+- Minimal animations (fade-in, slide-in only)
+- No external tracking scripts unless justified
+
+## Pages & Routes
+- `/` - Home
+- `/about` - About company and founder
+- `/services` - Service offerings
+- `/portfolio` - Case studies and projects
+- `/tenders` - Tenders and compliance documentation
+- `/blog` - Insights and articles
+- `/contact` - Contact and quote request form
+- `/api/contact` - Form submission endpoint
+
+## Content Placeholders
+Use these examples as templates:
+- Case Studies: "BMW Group South Africa – DevOps platform project"
+- Companies: "Dark Fibre Africa", "CSIR"
+- Services: DevOps, Cloud, Development, Security, Observability
+
+## Brand Guidelines
+- **Primary Color**: (TBD - define Ndila Connect Services primary)
+- **Accent Color**: (TBD)
+- **Typography**: Clean Google Fonts pairing (e.g., Inter + Merriweather)
+- **Style**: Professional consulting/IT services aesthetic
+- **Icons**: Heroicons, Lucide, or Font Awesome (no AI themes)
+
+## Deployment Checklist
+- [ ] All demo content removed
+- [ ] Branding updated (no leftover template credits except MIT license)
+- [ ] SEO configured
+- [ ] Contact form working with email
+- [ ] File uploads secured
+- [ ] Mobile responsive verified
+- [ ] Links checked
+- [ ] Spelling reviewed
+- [ ] Animations subtle and smooth
+- [ ] Dark mode support (if using next-themes)
+- [ ] Performance optimized

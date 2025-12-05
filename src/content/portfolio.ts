@@ -1,44 +1,44 @@
 export const PORTFOLIO_CONTENT = [
   {
-    name: "GreenScape Landscaping",
+    name: "BMW Group South Africa – DevOps Platform",
     description:
-      "Modern landing page for a landscaping company featuring service showcases, before/after galleries, and instant quote requests.",
-    img: "/images/portfolio/eco.jpg",
-    url: "#",
+      "Designed and implemented a comprehensive DevOps platform with CI/CD pipelines, containerized deployments, and automated infrastructure. Reduced deployment time by 70% and improved system reliability.",
+    img: "/images/portfolio/project-1.jpg",
+    url: "/portfolio/bmw-devops",
   },
   {
-    name: "Starlight Prom Nights",
+    name: "Dark Fibre Africa – Kubernetes Migration",
     description:
-      "Vibrant promotional page for high school prom parties with ticket booking, photo galleries, and theme selection.",
-    img: "/images/portfolio/event.jpg",
-    url: "#",
+      "Led enterprise-scale Kubernetes migration for containerized microservices. Implemented multi-cluster setup, service mesh, and observability stack. Achieved 99.99% uptime SLA.",
+    img: "/images/portfolio/project-2.jpg",
+    url: "/portfolio/dfa-kubernetes",
   },
   {
-    name: "Prestige College of Arts",
+    name: "CSIR – Cloud Infrastructure Redesign",
     description:
-      "Elegant academic landing page with program highlights, virtual campus tours, and application portals.",
-    img: "/images/portfolio/art.jpg",
-    url: "#",
+      "Architected multi-cloud infrastructure across AWS and Azure for research institution. Implemented cost optimization strategies, compliance monitoring, and disaster recovery plans.",
+    img: "/images/portfolio/project-3.jpg",
+    url: "/portfolio/csir-cloud",
   },
   {
-    name: "CycleSpot Rentals",
+    name: "Financial Services – Security Compliance",
     description:
-      "Bike rental platform with location-based availability, pricing calculators, and secure online bookings.",
-    img: "/images/portfolio/bike.jpg",
-    url: "#",
+      "Implemented SOC 2 Type II and ISO 27001 compliance frameworks. Conducted security audits, implemented zero-trust architecture, and established continuous compliance monitoring.",
+    img: "/images/portfolio/project-4.jpg",
+    url: "/portfolio/fintech-security",
   },
   {
-    name: "Bella Cucina Restaurant",
+    name: "E-Commerce Platform – High-Availability Setup",
     description:
-      "Appetizing restaurant landing page with menu displays, reservation system, and chef's specials highlights.",
-    img: "/images/portfolio/resturant.jpg",
-    url: "#",
+      "Built fault-tolerant, auto-scaling e-commerce infrastructure supporting 100k+ concurrent users. Implemented caching strategies, CDN optimization, and real-time monitoring dashboards.",
+    img: "/images/portfolio/project-5.jpg",
+    url: "/portfolio/ecommerce-ha",
   },
   {
-    name: "SereneMind Meditation",
+    name: "SaaS Platform – Full DevOps Lifecycle",
     description:
-      "Calming meditation app interface with guided session timers, progress tracking, and relaxation music integration.",
-    img: "/images/portfolio/meditation.jpg",
-    url: "#",
+      "Established complete DevOps pipeline from development to production. Implemented infrastructure-as-code, automated testing, deployment staging, and comprehensive logging/monitoring.",
+    img: "/images/portfolio/project-6.jpg",
+    url: "/portfolio/saas-lifecycle",
   },
 ];

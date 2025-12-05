@@ -1,0 +1,62 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+    
+    - name: Install pnpm
+      run: npm install -g pnpm
+    
+    - name: Install dependencies
+      run: pnpm install
+    
+    - name: Build
+      run: pnpm run build
+    
+    # Option 1: Deploy to Vercel
+    - name: Deploy to Vercel
+      run: |
+        npm install -g vercel
+        vercel deploy --prod --token ${{ secrets.VERCEL_TOKEN }}
+      if: ${{ secrets.VERCEL_TOKEN != '' }}
+      continue-on-error: true
+    
+    # Option 2: Deploy to Azure (uncomment and configure if using Azure)
+    # - name: Deploy to Azure
+    #   uses: azure/static-web-apps-deploy@v1
+    #   with:
+    #     azure_static_web_apps_api_token: ${{ secrets.AZURE_SWA_TOKEN }}
+    #     action: 'upload'
+    #     app_location: '.'
+    #     output_location: '.next'
+    #   if: ${{ secrets.AZURE_SWA_TOKEN != '' }}
+    
+    # Option 3: Deploy to custom server via SSH (uncomment and configure if using custom server)
+    # - name: Deploy to Custom Server
+    #   uses: appleboy/ssh-action@master
+    #   with:
+    #     host: ${{ secrets.SSH_HOST }}
+    #     username: ${{ secrets.SSH_USERNAME }}
+    #     key: ${{ secrets.SSH_PRIVATE_KEY }}
+    #     script: |
+    #       cd /path/to/app
+    #       git pull origin main
+    #       pnpm install
+    #       pnpm run build
+    #       systemctl restart ndila-website
+    #   if: ${{ secrets.SSH_HOST != '' }}
+
+    - name: Notify Deployment
+      run: echo "Deployment workflow completed"

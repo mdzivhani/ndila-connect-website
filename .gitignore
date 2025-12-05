@@ -28,6 +28,24 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# environment variables
+.env.local
+.env.*.local
+
+# uploads
+/tmp/
+/tmp/uploads/
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+Thumbs.db
 .pnpm-debug.log*
 
 # env files (can opt-in for committing if needed)
